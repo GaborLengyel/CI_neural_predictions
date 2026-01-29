@@ -3,10 +3,27 @@ Bayesian causal inference unifies perceptual and neuronal processing of center-s
 This repository contains the code required to reproduce the analysis and figures presented in the paper "Bayesian causal inference unifies perceptual and neuronal processing of center-surround motion in area MT". The project utilizes a combination of Python for data analysis and MATLAB for model predictions and simulation.
 
 ```
-.
-├── matlab/         # MATLAB scripts for Figure 5 and model predictions
-├── python/         # IPython notebooks for general figure analysis
-└── README.md       # Project documentation
+ROC_CI_pred/
+├── analysis/
+│   ├── matlab/
+│   │   ├── functions/
+│   │   ├── Figs.5_S2_S3_plot_4DTuningCurves.m   # MATLAB scripts for Figure 5 
+│   │   └── Generate_data_for_Figs.5_S2_S3...    # MATLAB script for running the model simulation
+│   ├── old_matlab/
+│   ├── old_python/
+│   ├── plots/
+│   └── python/                        # IPython notebooks for general figure analysis
+│       ├── Fig.3_plotPosteriors.ipynb
+│       ├── Fig.4d_2DTuningCurves.ipynb
+│       ├── Fig.7_fit_data.ipynb
+│       ├── Fig.S4_clusters.ipynb
+│       ├── Figs.6_S5_fit_data.ipynb
+│       └── forRefact.py
+├── docs/
+├── plots/
+├── .gitignore
+├── environment.yml
+└── README.md
 ```
 
 Getting Started
