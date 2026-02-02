@@ -1,4 +1,6 @@
 clear all
+load('../../data/models10_all.mat');
+load('../../data/model_params_5subj.mat')
 %%%%%%%%%%%%%% setting params for the model %%%%%%%%%%%%%
 point = linspace(-180,180,361);
 gap = 4;
@@ -80,7 +82,7 @@ lenCaus = length(causalStruct);
 num_trials=100;
 ndots_all=10;   % Can be 1,2,3,5,10
 subid_all=[1,2,3,4,5];  % Can be 1,2,3,4,5
-load('../../data/models10_all.mat');
+
 noise = [1,10,100];
 lenV = 100;
 lenS = 5;
@@ -126,7 +128,7 @@ NM = (lenS);
 % figure;
 % plot(squeeze(model_params(:,1,:))')
 %randfrom2000 = randperm(size(model_params,1));
-load('../../data/model_params_5subj.mat')
+
 %%%%%%%%%%%%%%%%%%%%%%%% model computes inference %%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %startS = 101; endS=200;
